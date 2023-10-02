@@ -7,6 +7,41 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        #porta {
+        width: 700px; /* Defina a largura da imagem */
+        height: 600px; /* Defina a altura da imagem */
+        transition: opacity 0.5s; /* Adicione uma transição de 0.5 segundos para a opacidade */
+    } 
+    </style>
+
+    <script type="text/javascript">
+        function mudar(objeto, imagem){
+            porta.src = imagem;
+        }
+
+        function mudar(objeto, imagem) {
+
+        var elemento = document.getElementById(objeto);
+
+    if (elemento) {
+        elemento.style.opacity = 0;/* Define a opacidade para 0 para iniciar a transição */
+    setTimeout(function() {
+        elemento.src = imagem;/* Altera a imagem após um pequeno atraso */
+        elemento.style.opacity = 1;/* Define a opacidade de volta para 1 para a transição suave */
+    }, 300);/* Atraso de 500 milissegundos (0,5 segundos) */
+    }
+    else {
+    console.error("Elemento não encontrado com o ID: " + objeto);
+    }
+    }
+    </script>
+    <center>
+    <a onmouseover="mudar('porta', 'img/')"
+    onmouseout="mudar('porta', 'img/')">
+    <img src="imagem/dois.png" alt="" id="porta"></a>
+    </center>
+
     <h1>Aritmética</h1>
     <p>A aritmética (da palavra grega ἀριθμός, arithmós,[a] "número") é o ramo mais elementar e antigo da matemática, lida com as operações possíveis entre os números; é utilizada por quase todo ser humano: seja em tarefas cotidianas, seja em tarefas científicas ou negociais. As quatro operações matemáticas mais elementares (adição, subtração, multiplicação e divisão) são a aritmética elementar.
     Por vezes, matemáticos profissionais utilizam o termo "aritmética superior" para referirem-se àlgum resultado mais avançado relacionado à teoria dos números; contudo, da aritmética elementar, isso não é parte.</p>
@@ -20,15 +55,37 @@
     <p>Na Idade Média, a aritmética era uma das sete artes liberais ensinadas nas universidades.</p>
     <p>O florescimento da álgebra no mundo medieval islâmico e na Europa renascentista, foi uma consequência da simplificação enorme de computação através de notação decimal.</p>
     <p>Vários tipos de ferramentas existem para auxiliar em cálculos numéricos. Exemplos incluem réguas de cálculo (para a multiplicação, divisão e trigonometria) e nomogramas, além da calculadora eletrônica.</p>
+
+    <h2>Alguns exercicios:</h2>
     <form>
-        <h1>A</h1>
-        <input type="radio" name="resposta" value="errada">Sim, sou viado <br>
-        <input type="radio" name="resposta" value="errada">Sim, algum problema <br>
-        <input type="radio" name="resposta" value="errada">Sim <br>
-        <input type="radio" name="resposta" value="correta">Não, sou homem porra <br>
+        <h4>1-Maria e Paula estão atendendo pessoas na realização de matrículas na FURB. Analisando o desempenho das duas, percebe-se que Maria é mais rápida que Paula nos atendimentos e consegue atender duas pessoas a cada 1 que Paula atende. Sabendo que Paula demora, em média, 18 minutos para atender cada pessoa e que há 30 pessoas para serem atendidas, pode-se afirmar que o tempo total de atendimento será, em horas, de:</h4>
+        <input type="radio" name="resposta" value="errada">a)1<br>
+        <input type="radio" name="resposta" value="errada">b)2<br>
+        <input type="radio" name="resposta" value="errada">c)1,5<br>
+        <input type="radio" name="resposta" value="correta">d)3<br>
         <button type="button" onclick="funcaoResposta()">Resposta</button>
         <p id="retorno"></p>
-        <script src="script.js"></script>
+        <script src="Script.js"></script>
+        
+        <h4>2-Mário pretende realizar uma viagem utilizando um veículo cujo consumo médio de combustível é de 10 Km/L. Sabendo que percorrerá 300 km, é correto afirmar que o volume de combustível a ser consumido será de:</h4>
+        <input type="radio" name="resposta" value="errada">a)10 litros<br>
+        <input type="radio" name="resposta" value="errada">b)12 litros<br>
+        <input type="radio" name="resposta" value="errada">c)15 litros<br>
+        <input type="radio" name="resposta" value="errada">d)25 litros<br>
+        <input type="radio" name="resposta" value="correta">d)30 litros<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+
+        <h4>3-Se 2/3 de uma obra foi avaliado em R$ 15.800,00, então o valor de 3/5 da mesma obra será igual a:</h4>
+        <input type="radio" name="resposta" value="correta">a)R$ 14.220,00.<br>
+        <input type="radio" name="resposta" value="errada">b) R$ 9.480,00.<br>
+        <input type="radio" name="resposta" value="errada"> c) R$ 27.700,00.<br>
+        <input type="radio" name="resposta" value="errada">d) R$ 25.000,00.<br>
+        <input type="radio" name="resposta" value="errada">e) R$ 13.167,00.<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
     </form>
 </body>
 </html>
