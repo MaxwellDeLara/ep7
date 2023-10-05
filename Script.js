@@ -3,13 +3,33 @@ function funcaoResposta(){
     var respostaUsuario = document.querySelector('input[name="resposta"]:checked');
     if(respostaUsuario){
         if(respostaUsuario.value === respostaCorreta){
-            document.getElementById("retorno").textContent = "Correto!";
+            alert("Correto");
         }
         else{
-            document.getElementById("retorno").textContent = "Errado!";
+            alert("Errado");
         }
     }
     else{
-        document.getElementById("retorno").textContent = "Escolha uma opção!";
+        alert("Escolha uma opção");
+    }
+}
+
+function equacao1grau(){
+    var a = vara.value;
+    var b = varb.value;
+    var x = varx.value;
+
+    var resposta = -b/a;
+
+    if(a == 0){
+        alert("a deve ser diferente de 0");
+    }
+    else{
+        if(x == resposta){
+            alert("acertou");
+        }
+        else{
+            alert("errou");
+        }
     }
 }

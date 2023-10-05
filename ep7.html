@@ -9,8 +9,8 @@
 <body>
     <style>
         #porta {
-        width: 700px; /* Defina a largura da imagem */
-        height: 600px; /* Defina a altura da imagem */
+        width: 600px; /* Defina a largura da imagem */
+        height: 400px; /* Defina a altura da imagem */
         transition: opacity 0.5s; /* Adicione uma transição de 0.5 segundos para a opacidade */
     } 
     </style>
@@ -37,8 +37,8 @@
     }
     </script>
     <center>
-    <a onmouseover="mudar('porta', 'img/')"
-    onmouseout="mudar('porta', 'img/')">
+    <a onmouseover="mudar('porta', 'img/2.png')"
+    onmouseout="mudar('porta', 'img/1.png')">
     <img src="imagem/dois.png" alt="" id="porta"></a>
     </center>
 
@@ -57,8 +57,18 @@
     <p>Vários tipos de ferramentas existem para auxiliar em cálculos numéricos. Exemplos incluem réguas de cálculo (para a multiplicação, divisão e trigonometria) e nomogramas, além da calculadora eletrônica.</p>
 
     <h2>Alguns exercicios:</h2>
+    <form>
+        <h4>Se a média aritmética entre n, n – 1, 2n + 1 e 4 é 10, determine o valor de n.</h4><br>
+        n + (n – 1) + (2n + 1) + 4 = 10<br>
+        n: <input type="text" id="vara" value="0"><br>
+        n: <input type="text" id="varb" value="0"><br>
+        <br>
+        n: <input type="text" id="varx" value="0"><br>
+        <button type="button" onclick="equacao1grau()">Calcular</button>
+        <script src="Script.js"></script>
+    </form>
     <script type="text/javascript">
-        function josefa(){
+        function adicao(){
             fernanda.value = parseInt(aram1.value) + parseInt(aram2.value);
         }
         function subtrair(){
@@ -78,7 +88,7 @@
     <h1>Cálculo de Soma:</h1>
     Valor 1: <input type="text" id="aram1" value="0"><br>
     Valor 2: <input type="text" id="aram2" value="0"><br>
-    <input type="button" value="Somar" onclick="josefa()">
+    <input type="button" value="Somar" onclick="adicao()">
     <input type="button" value="Subtrair" onclick="subtrair()">
     <input type="button" value="Multiplicar" onclick="multiplicacao()">
     <input type="button" value="Dividir" onclick="divisao()"><br>
@@ -178,12 +188,12 @@
         <p id="retorno"></p>
         <script src="Script.js"></script>
 
-        <h4>10-:</h4>
-        <input type="radio" name="resposta" value="correta">a) <br>
-        <input type="radio" name="resposta" value="errada">b) <br>
-        <input type="radio" name="resposta" value="errada"> c) <br>
-        <input type="radio" name="resposta" value="errada">d) <br>
-        <input type="radio" name="resposta" value="errada">e) <br>
+        <h4>10-A média aritmética de n números positivos é 7. Retirando-se do conjunto desses números o número 5, a média aritmética dos números que restam passa a ser 8. O valor de n é::</h4>
+        <input type="radio" name="resposta" value="errada">a) 2<br>
+        <input type="radio" name="resposta" value="correta">b) 3<br>
+        <input type="radio" name="resposta" value="errada"> c) 5<br>
+        <input type="radio" name="resposta" value="errada">d) 6<br>
+        <input type="radio" name="resposta" value="errada">e) 9<br>
         <button type="button" onclick="funcaoResposta()">Resposta</button>
         <p id="retorno"></p>
         <script src="Script.js"></script>
