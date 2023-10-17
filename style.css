@@ -1,4 +1,98 @@
-body{
+header{
+    display: grid;
+    grid-template-areas: 
+    "cabe"
+    "prin"
+    "roda";
+}
+/* Estilos do cabeçalho */
+.cabe{
+    grid-area: cabe;
+}
+/* Estilos do conteúdo principal */
+.prin{
+    grid-area: prin;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Estilos do rodapé */
+.roda{
+    grid-area: roda;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para os ícones no menu móvel */
+.nav_mobile img{
+    width: 40px;
+}
+
+/* Esconde o checkbox utilizado para o menu móvel */
+.nav_mobile input[type="checkbox"]{
+    display: none;
+}
+
+/* Estilos para o menu de navegação móvel */
+.nav_mobile nav{
+    background-color: white;
+    border: black solid;
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    left: -350px;
+    transition: all 0.6s;
+}
+
+/* Estilos para os links no menu móvel */
+.nav_mobile a{
+    position: relative;
+    border: white solid;
+    display: block;
+    padding: 20pxscreen 5px;
+    text-decoration: none;
+}
+
+/* Estilos para a label do menu móvel */
+.nav_mobile label{
+    position: relative;
+    z-index: 1;
+}
+
+/* Controla a abertura do menu móvel */
+.nav_mobile input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
+
+.centro{
+    text-align: center;
+}
+
+/* Estilos de responsividade para telas menores */
+@media only screen and (max-width: 800px){
+    body{
+        grid-template-areas: 
+        "cabe"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 50px 500px 200px;
+    }
+}
+
+/* Estilos de responsividade para telas ainda menores */
+@media only screen and (max-width:270px){
+    body{
+        grid-template-areas: 
+        "cabe"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 100px;
+    }
+}
+
+#porta {
+    width: 600px; /* Defina a largura da imagem */
+    height: 400px; /* Defina a altura da imagem */
+    transition: opacity 0.5s; /* Adicione uma transição de 0.5 segundos para a opacidade */
+} 

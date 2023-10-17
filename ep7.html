@@ -6,43 +6,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <style>
-        #porta {
-        width: 600px; /* Defina a largura da imagem */
-        height: 400px; /* Defina a altura da imagem */
-        transition: opacity 0.5s; /* Adicione uma transição de 0.5 segundos para a opacidade */
-    } 
-    </style>
-
-    <script type="text/javascript">
-        function mudar(objeto, imagem){
-            porta.src = imagem;
-        }
-
-        function mudar(objeto, imagem) {
-
-        var elemento = document.getElementById(objeto);
-
-    if (elemento) {
-        elemento.style.opacity = 0;/* Define a opacidade para 0 para iniciar a transição */
-    setTimeout(function() {
-        elemento.src = imagem;/* Altera a imagem após um pequeno atraso */
-        elemento.style.opacity = 1;/* Define a opacidade de volta para 1 para a transição suave */
-    }, 300);/* Atraso de 500 milissegundos (0,5 segundos) */
-    }
-    else {
-    console.error("Elemento não encontrado com o ID: " + objeto);
-    }
-    }
-    </script>
+<header class="cabe">
     <center>
     <a onmouseover="mudar('porta', 'img/Design2.png')"
     onmouseout="mudar('porta', 'img/Design1.png')">
     <img src="imagem/dois.png" alt="" id="porta"></a>
     </center>
+</header>
+<body class="prin">
 
-    <h1>Aritmética</h1>
+    <h1 class="centro">Aritmética</h1>
     <p>A aritmética (da palavra grega ἀριθμός, arithmós,[a] "número") é o ramo mais elementar e antigo da matemática, lida com as operações possíveis entre os números; é utilizada por quase todo ser humano: seja em tarefas cotidianas, seja em tarefas científicas ou negociais. As quatro operações matemáticas mais elementares (adição, subtração, multiplicação e divisão) são a aritmética elementar.
     Por vezes, matemáticos profissionais utilizam o termo "aritmética superior" para referirem-se àlgum resultado mais avançado relacionado à teoria dos números; contudo, da aritmética elementar, isso não é parte.</p>
     <p>A pré-história da aritmética é limitada a um pequeno número de artefatos que podem indicar a concepção de adição e subtração; o mais conhecido desses é o osso de Ishango da África Central, datado dum momento entre 20 000 e 18 000 a.C., embora sua interpretação seja contestada.</p>
@@ -56,8 +29,8 @@
     <p>O florescimento da álgebra no mundo medieval islâmico e na Europa renascentista, foi uma consequência da simplificação enorme de computação através de notação decimal.</p>
     <p>Vários tipos de ferramentas existem para auxiliar em cálculos numéricos. Exemplos incluem réguas de cálculo (para a multiplicação, divisão e trigonometria) e nomogramas, além da calculadora eletrônica.</p>
 
-    <h2>Alguns exercicios:</h2>
-    <form>
+    <h2 class="centro">Alguns exercicios:</h2>
+    <form class="centro">
         <h4>Se a média aritmética entre n, n – 1, 2n + 1 e 4 é 10, determine o valor de n.</h4><br>
         n + (n – 1) + (2n + 1) + 4 = 10<br>
         n: <input type="text" id="vara" value="0"><br>
@@ -78,14 +51,15 @@
             fernanda.value = parseInt(aram1.value) * parseInt(aram2.value);
         }
         function divisao(){
-            if(aram2.value == 0)
-                alert("Tá");
+            if(aram2.value == 0);
+
             else{
                 fernanda.value = parseInt(aram1.value) / parseInt(aram2.value);
             }
         }
     </script>
-    <h1>Cálculo de Soma:</h1>
+    <center>
+    <h1>Cálculos:</h1>
     Valor 1: <input type="text" id="aram1" value="0"><br>
     Valor 2: <input type="text" id="aram2" value="0"><br>
     <input type="button" value="Somar" onclick="adicao()">
@@ -93,7 +67,9 @@
     <input type="button" value="Multiplicar" onclick="multiplicacao()">
     <input type="button" value="Dividir" onclick="divisao()"><br>
     Resultado: <input type="text" id="fernanda" value="0">
-
+    </center>
+</body>
+<footer class="roda">
     <form>
         <h4>1-Maria e Paula estão atendendo pessoas na realização de matrículas na FURB. Analisando o desempenho das duas, percebe-se que Maria é mais rápida que Paula nos atendimentos e consegue atender duas pessoas a cada 1 que Paula atende. Sabendo que Paula demora, em média, 18 minutos para atender cada pessoa e que há 30 pessoas para serem atendidas, pode-se afirmar que o tempo total de atendimento será, em horas, de:</h4>
         <input type="radio" name="resposta" value="errada">a)1<br>
@@ -198,5 +174,5 @@
         <p id="retorno"></p>
         <script src="Script.js"></script>
     </form>
-</body>
+</footer>
 </html>
