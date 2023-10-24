@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="prin">
+    <nav>
+        <ul>
+            <li><a href="ep7.html">Conteúdo</a></li>
+        </ul>
+    </nav>
+    <form>
+        <h4>1-Se a média aritmética entre n, n – 1, 2n + 1 e 4 é 10, determine o valor de n.</h4><br>
+        n + (n – 1) + (2n + 1) + 4 = 10<br>
+        n: <input type="text" id="vara" value="0"><br>
+        n: <input type="text" id="varb" value="0"><br>
+        <br>
+        n: <input type="text" id="varx" value="0"><br>
+        <button type="button" onclick="equacao1grau()">Calcular</button>
+        <script src="Script.js"></script>
+    </form>
+    <script type="text/javascript">
+        function adicao(){
+            fernanda.value = parseInt(aram1.value) + parseInt(aram2.value);
+        }
+        function subtrair(){
+            fernanda.value = parseInt(aram1.value) - parseInt(aram2.value);
+        }
+        function multiplicacao(){
+            fernanda.value = parseInt(aram1.value) * parseInt(aram2.value);
+        }
+        function divisao(){
+            if(aram2.value == 0);
+
+            else{
+                fernanda.value = parseInt(aram1.value) / parseInt(aram2.value);
+            }
+        }
+    </script>
+    <h2>Cálculadora:</h2>
+    Valor 1: <input type="text" id="aram1" value="0"><br>
+    Valor 2: <input type="text" id="aram2" value="0"><br>
+    <input type="button" value="Somar" onclick="adicao()">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <input type="button" value="Multiplicar" onclick="multiplicacao()">
+    <input type="button" value="Dividir" onclick="divisao()"><br>
+    Resultado: <input type="text" id="fernanda" value="0">
+    <form>
+        <h4>4-Maria e Paula estão atendendo pessoas na realização de matrículas na FURB. Analisando o desempenho das duas, percebe-se que Maria é mais rápida que Paula nos atendimentos e consegue atender duas pessoas a cada 1 que Paula atende. Sabendo que Paula demora, em média, 18 minutos para atender cada pessoa e que há 30 pessoas para serem atendidas, pode-se afirmar que o tempo total de atendimento será, em horas, de:</h4>
+        <input type="radio" name="resposta" value="errada">a)1<br>
+        <input type="radio" name="resposta" value="errada">b)2<br>
+        <input type="radio" name="resposta" value="errada">c)1,5<br>
+        <input type="radio" name="resposta" value="correta">d)3<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+        
+        <h4>5-Mário pretende realizar uma viagem utilizando um veículo cujo consumo médio de combustível é de 10 Km/L. Sabendo que percorrerá 300 km, é correto afirmar que o volume de combustível a ser consumido será de:</h4>
+        <input type="radio" name="resposta" value="errada">a)10 litros<br>
+        <input type="radio" name="resposta" value="errada">b)12 litros<br>
+        <input type="radio" name="resposta" value="errada">c)15 litros<br>
+        <input type="radio" name="resposta" value="errada">d)25 litros<br>
+        <input type="radio" name="resposta" value="correta">d)30 litros<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+
+        <h4>6-Se 2/3 de uma obra foi avaliado em R$ 15.800,00, então o valor de 3/5 da mesma obra será igual a:</h4>
+        <input type="radio" name="resposta" value="correta">a)R$ 14.220,00.<br>
+        <input type="radio" name="resposta" value="errada">b) R$ 9.480,00.<br>
+        <input type="radio" name="resposta" value="errada"> c) R$ 27.700,00.<br>
+        <input type="radio" name="resposta" value="errada">d) R$ 25.000,00.<br>
+        <input type="radio" name="resposta" value="errada">e) R$ 13.167,00.<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+
+        <h4>7-Os tempos gastos por três alunos para resolver um mesmo exercício de matemática foram: 3,25 minutos; 3,4 minutos e 191 segundos. O tempo gasto a mais, em segundo, pelo aluno que concluiu por último a resolução do exercício, em relação ao primeiro que o finalizou, foi igual a:</h4>
+        <input type="radio" name="resposta" value="correta">a) 13<br>
+        <input type="radio" name="resposta" value="errada">b) 14<br>
+        <input type="radio" name="resposta" value="errada"> c) 15<br>
+        <input type="radio" name="resposta" value="errada">d) 21<br>
+        <input type="radio" name="resposta" value="errada">e) 29<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+
+        <h4>8-A fim de reforçar o orçamento familiar, uma dona de casa começou a produzir doces para revender. Cada receita é composta de 4/5 de quilograma de amendoim e 1/5 de quilograma de açúcar. O quilograma de amendoim custa R$ 10,00 e o do açúcar, R$ 2,00. Porém, o açúcar teve um aumento e o quilograma passou a custar R$ 2,20. Para manter o mesmo custo com a produção de uma receita, essa dona de casa terá que negociar um desconto com o fornecedor de amendoim. Nas condições estabelecidas, o novo valor do quilograma de amendoim deverá ser igual a:</h4>
+        <input type="radio" name="resposta" value="errada">a) R$ 9,20.<br>
+        <input type="radio" name="resposta" value="errada">b) R$ 9,75.<br>
+        <input type="radio" name="resposta" value="errada"> c) R$ 9,80.<br>
+        <input type="radio" name="resposta" value="errada">d) R$ 9,84.<br>
+        <input type="radio" name="resposta" value="correta">e) R$ 9,95.<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+
+        <h4>9-Um banho propicia ao indivíduo um momento de conforto e reenergização. Porém, o desperdício de água gera prejuízo para todos. Considere que cada uma das cinco pessoas de uma família toma dois banhos por dia, de 15 minutos cada. Sabe-se que a cada hora de banho são gastos aproximadamente 540 litros de água. Considerando que um mês tem 30 dias, podemos perceber que o consumo de água é bem significativo. A quantidade total de litros de água consumida, nos banhos dessa família, durante um mês, é mais próxima de:</h4>
+        <input type="radio" name="resposta" value="errada">a) 1 350<br>
+        <input type="radio" name="resposta" value="errada">b) 2 700<br>
+        <input type="radio" name="resposta" value="errada"> c) 20 2500<br>
+        <input type="radio" name="resposta" value="errada">d) 20 520<br>
+        <input type="radio" name="resposta" value="correta">e) 40 500<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+
+        <h4>10-É comum as cooperativas venderem seus produtos a diversos estabelecimentos. Uma cooperativa láctea destinou 4 m3 de leite, do total produzido, para análise em um laboratório da região, separados igualmente em 4000 embalagens de mesma capacidade. Qual o volume de leite, em mililitro, contido em cada embalagem?</h4>
+        <input type="radio" name="resposta" value="errada">a) 0,1<br>
+        <input type="radio" name="resposta" value="errada">b) 1,0<br>
+        <input type="radio" name="resposta" value="errada"> c) 10,0<br>
+        <input type="radio" name="resposta" value="errada">d) 100,0<br>
+        <input type="radio" name="resposta" value="correta">e) 1 000,0<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+
+        <h4>11-Para construir uma piscina, cuja área total da superfície interna é igual a 40 m², uma construtora apresentou o seguinte orçamento:      
+            • R$ 10 000,00 pela elaboração do projeto;
+            • R$ 40 000,00 pelos custos fixos;
+            • R$ 2 500,00 por metro quadrado para construção da área interna da piscina.
+            Após a apresentação do orçamento, essa empresa decidiu reduzir o valor de elaboração do projeto em 50%, mas recalculou o valor do metro quadrado para a construção da área interna da piscina, concluindo haver a necessidade de aumentá-lo em 25%. Além disso, a construtora pretende dar um desconto nos custos fixos, de maneira que o novo valor do orçamento seja reduzido em 10% em relação ao total inicial. O percentual de desconto que a construtora deverá conceder nos custos fixos é de:</h4>
+        <input type="radio" name="resposta" value="errada">a) 23,3%<br>
+        <input type="radio" name="resposta" value="errada">b) 25,0%<br>
+        <input type="radio" name="resposta" value="errada"> c) 50,0%<br>
+        <input type="radio" name="resposta" value="correta">d) 87,5%<br>
+        <input type="radio" name="resposta" value="errada">e) 100,0%<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+
+        <h4>12-Numa reunião social havia 42 pessoas. Sendo que 4/7 eram do sexo feminino, quantos homens estavam no local?</h4>
+        <input type="radio" name="resposta" value="errada">a) 20<br>
+        <input type="radio" name="resposta" value="correta">b) 18<br>
+        <input type="radio" name="resposta" value="errada"> c) 32<br>
+        <input type="radio" name="resposta" value="errada">d) 24<br>
+        <input type="radio" name="resposta" value="errada">e) 10<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+
+        <h4>13-A média aritmética de n números positivos é 7. Retirando-se do conjunto desses números o número 5, a média aritmética dos números que restam passa a ser 8. O valor de n é::</h4>
+        <input type="radio" name="resposta" value="errada">a) 2<br>
+        <input type="radio" name="resposta" value="correta">b) 3<br>
+        <input type="radio" name="resposta" value="errada"> c) 5<br>
+        <input type="radio" name="resposta" value="errada">d) 6<br>
+        <input type="radio" name="resposta" value="errada">e) 9<br>
+        <button type="button" onclick="funcaoResposta()">Resposta</button>
+        <p id="retorno"></p>
+        <script src="Script.js"></script>
+</body>
+</html>

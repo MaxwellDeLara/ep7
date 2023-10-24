@@ -12,6 +12,8 @@ header{
 /* Estilos do conteúdo principal */
 .prin{
     grid-area: prin;
+    background-color: dodgerblue;
+    color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -96,3 +98,31 @@ header{
     height: 400px; /* Defina a altura da imagem */
     transition: opacity 0.5s; /* Adicione uma transição de 0.5 segundos para a opacidade */
 } 
+
+nav a{
+   color: rgb(255, 252, 78);
+   padding:7px;
+   transition:2s;   /*serve para criar uma transição(animação)*/
+   font-size:30px;   /*muda o tamanho da font*/
+   text-decoration: none;   /*caso queira mudar a decoração do texto ou tirar*/
+   font-weight: bold;   /*peso da fonte de um elemento de texto, no caso bold é para negrito*/
+}
+  
+nav ul {
+   list-style: none;   /*para escolher um estilo de lista*/
+   margin: 0;
+   padding: 0;
+   display: flex;   /*pode ser usada para alterar a exibição padrão de um elemento*/
+   justify-content: center;   /*escolher onde o conteúdo desejado fica*/
+}
+  
+nav li {
+    display: inline;
+    margin: 15px 100px 15px 100px;
+}
+  
+nav a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 35px;
+}
