@@ -1,4 +1,4 @@
-header{
+header{/* Definição de layout em grid para o elemento header */
     display: grid;
     grid-template-areas: 
     "cabe"
@@ -8,6 +8,7 @@ header{
 /* Estilos do cabeçalho */
 .cabe{
     grid-area: cabe;
+    align-items: center;/* Centraliza os elementos do cabeçalho verticalmente */
 }
 /* Estilos do conteúdo principal */
 .prin{
@@ -116,13 +117,48 @@ nav ul {
    justify-content: center;   /*escolher onde o conteúdo desejado fica*/
 }
   
-nav li {
-    display: inline;
-    margin: 15px 100px 15px 100px;
+nav li {/* Estilos para os itens da lista (li) na navegação */
+    display: inline;/* Exibe os itens da lista em linha (horizontal) */
+    margin: 15px 100px 15px 100px;/* Define margens para os itens */
 }
   
-nav a:hover{
+nav a:hover{/* Estilos para links da navegação quando o mouse está sobre eles (hover) */
+    font-weight: bold;/* Torna o texto em negrito quando o mouse está sobre o link */
+    text-decoration: none;/* Remove a decoração dos links no hover */
+    font-size: 35px;/* Aumenta o tamanho da fonte quando o mouse está sobre o link */
+}
+
+#aritmetica{/* Estilos para a imagem com ID "aritmetica" */
+    width: 300px;/* Define a largura da imagem com ID "aritmetica" */
+    height: 200px;/* Define a altura da imagem com ID "aritmetica" */
+    transition: opacity 0.5s;/* Adiciona uma transição de 0,5 segundos para a propriedade de opacidade */
+}
+.img{/* Estilos para as imagens com a classe "img" */
+    width: 250px;/* Define a largura das imagens com a classe "img" */
+}
+
+.exercicios{/* Estilos para a classe "exercicios" */
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
     font-weight: bold;
-    text-decoration: none;
-    font-size: 35px;
+    background-image: linear-gradient(135deg, #333); /* Define um plano de fundo gradiente */
+    border-radius: 30px; /* Arredonda as bordas da caixa */
+    margin: 200px; /* Define margem superior e inferior de 200px */
+    margin-top: 40px; /* Define margem superior de 40px */
+    margin-bottom: 0px; /* Define margem inferior de 0px */
+}
+
+p{/* Estilos para o parágrafo <p> */
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(135deg, #333);
+    border-radius: 30px;
+    margin: 70px;
+    margin-top: 40px;
+    margin-bottom: 0px;
 }
